@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Additional Custom CSS Styling */
+    body {
+      
+      background-color: white;
+      
+    }
+    
+    .container {
+      margin-top: 50px;
+      
+    }
+    .bg {
+  /* The image used */
+  background-image: url("back-ground.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    h1 {
+      font-size: 32px;
+      font-weight: bolder;
+      margin-bottom: 30px;
+      color: rgb(124, 24, 96)
+    }
+    
+    .birthday-img {
+      margin-top: 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    
+    .birthday-img:hover {
+      transform: scale(1.05);
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="text-center">
+      <h1>Happy Birthday, Doctor Friend!</h1>
+      <p>Wishing you a day filled with joy, laughter, and lots of celebration.</p>
+      <a href="next.html"><img src="happy-birthday.png" alt="Happy Birthday" class="img-fluid birthday-img"></a>
+      <p>Click Me :) </p>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript
+    // You can add interactivity or additional features using JavaScript
+    // For example, you can display a birthday message when the image is clicked
+    const birthdayImg = document.querySelector('.birthday-img');
+    
+    birthdayImg.addEventListener('click', () => {
+        alert("It's your birthdayyyy bro!!!!!!!!!!");
+    });
+  </script>
+  
+</body>
+</html>
+
+
